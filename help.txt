@@ -1,0 +1,46 @@
+1)绑定用户
+	git config --global user.name "Taury"
+	git config --global user.email "18319739729@163.com"
+
+2)本地生成ssh key 并添加到github
+	ssh-keygen -t rsa -C "18319739729@163.com"
+
+3)创建本地仓库
+	git init
+
+拷贝Git仓库到本地
+	ssh  方式：git clone git@github.com:Taury/monamie.git [dst_dir] /* 本地目录不可以是仓库 */
+	https方式：git clone https://github.com/Taury/monamie.git [dst_dir]
+
+4)添加文件到缓存
+	git add <file> 	/* git add . 将当前目录下所有为未跟踪的文件全部添加到缓存 */
+
+取消已缓存的文件
+	git reset HEAD <file>
+
+5)提交文件到仓库
+	git commit [file] -m "备注"
+
+从仓库中移除文件
+	git rm <file>	/* git rm -f <file> 删除之前修改过并且已经放到暂存区域的文件 */
+
+6)关联远程仓库
+	git remote add orgin git@github.com:Taury/monamie.git
+
+7)上传本地代码到远程仓库
+	git push -u origin master /* 注意：github不能管理空文件夹 */
+
+
+注意：
+	git rm --cached [file]: 从stage（index，暂存区） 里面删除文件，当你提交（commit）之后文件就会删除了。
+
+	git reset HEAD [file]:  回退暂存区里的文件（还原为HEAD commit里面该文件的状态），会撤销从上一次提交（commit）之后的一些操作。
+
+		如果是对于新增文件，这两个操作时等效的。
+
+		这两个命令都是对stage,index的操作。
+	
+	git rm和rm的区别
+		用 git rm 来删除文件，执行 git commit -m [file] 提交时会将这个删除操作记录下来；
+
+		用 rm 来删除文件，仅仅是删除了物理文件,使用 git commit -am [file] 提交才会将删除文件的操作提交上去。
