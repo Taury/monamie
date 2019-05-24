@@ -1,46 +1,76 @@
-1)°ó¶¨ÓÃ»§
+1)ç»‘å®šç”¨æˆ·
 	git config --global user.name "Taury"
-	git config --global user.email "18319739729@163.com"
+	git config --global user.email "183********@163.com"
 
-2)±¾µØÉú³Éssh key ²¢Ìí¼Óµ½github
-	ssh-keygen -t rsa -C "18319739729@163.com"
+2)æœ¬åœ°ç”Ÿæˆssh key å¹¶æ·»åŠ åˆ°github
+	ssh-keygen -t rsa -C "183********@163.com"
 
-3)´´½¨±¾µØ²Ö¿â
+3)åˆ›å»ºæœ¬åœ°ä»“åº“
 	git init
 
-¿½±´Git²Ö¿âµ½±¾µØ
-	ssh  ·½Ê½£ºgit clone git@github.com:Taury/monamie.git [dst_dir] /* ±¾µØÄ¿Â¼²»¿ÉÒÔÊÇ²Ö¿â */
-	https·½Ê½£ºgit clone https://github.com/Taury/monamie.git [dst_dir]
+æ‹·è´Gitä»“åº“åˆ°æœ¬åœ°
+	ssh  æ–¹å¼ï¼šgit clone git@github.com:Taury/monamie.git [dst_dir] /* æœ¬åœ°ç›®å½•ä¸å¯ä»¥æ˜¯ä»“åº“ */
+	httpsæ–¹å¼ï¼šgit clone https://github.com/Taury/monamie.git [dst_dir]
 
-4)Ìí¼ÓÎÄ¼şµ½»º´æ
-	git add <file> 	/* git add . ½«µ±Ç°Ä¿Â¼ÏÂËùÓĞÎªÎ´¸ú×ÙµÄÎÄ¼şÈ«²¿Ìí¼Óµ½»º´æ */
+4)æ·»åŠ æ–‡ä»¶åˆ°ç¼“å­˜
+	git add <file> 	/* git add . å°†å½“å‰ç›®å½•ä¸‹æ‰€æœ‰ä¸ºæœªè·Ÿè¸ªçš„æ–‡ä»¶å…¨éƒ¨æ·»åŠ åˆ°ç¼“å­˜ */
 
-È¡ÏûÒÑ»º´æµÄÎÄ¼ş
+å–æ¶ˆå·²ç¼“å­˜çš„æ–‡ä»¶
 	git reset HEAD <file>
 
-5)Ìá½»ÎÄ¼şµ½²Ö¿â
-	git commit [file] -m "±¸×¢"
+5)æäº¤æ–‡ä»¶åˆ°ä»“åº“
+	git commit [file] -m "å¤‡æ³¨"
 
-´Ó²Ö¿âÖĞÒÆ³ıÎÄ¼ş
-	git rm <file>	/* git rm -f <file> É¾³ıÖ®Ç°ĞŞ¸Ä¹ı²¢ÇÒÒÑ¾­·Åµ½Ôİ´æÇøÓòµÄÎÄ¼ş */
+ä»ä»“åº“ä¸­ç§»é™¤æ–‡ä»¶
+	git rm <file>	/* git rm -f <file> åˆ é™¤ä¹‹å‰ä¿®æ”¹è¿‡å¹¶ä¸”å·²ç»æ”¾åˆ°æš‚å­˜åŒºåŸŸçš„æ–‡ä»¶ */
 
-6)¹ØÁªÔ¶³Ì²Ö¿â
+6)å…³è”è¿œç¨‹ä»“åº“
 	git remote add orgin git@github.com:Taury/monamie.git
 
-7)ÉÏ´«±¾µØ´úÂëµ½Ô¶³Ì²Ö¿â
-	git push -u origin master /* ×¢Òâ£ºgithub²»ÄÜ¹ÜÀí¿ÕÎÄ¼ş¼Ğ */
+7)ä¸Šä¼ æœ¬åœ°ä»£ç åˆ°è¿œç¨‹ä»“åº“
+	git push -u origin master /* æ³¨æ„ï¼šgithubä¸èƒ½ç®¡ç†ç©ºæ–‡ä»¶å¤¹ */
 
 
-×¢Òâ£º
-	git rm --cached [file]: ´Óstage£¨index£¬Ôİ´æÇø£© ÀïÃæÉ¾³ıÎÄ¼ş£¬µ±ÄãÌá½»£¨commit£©Ö®ºóÎÄ¼ş¾Í»áÉ¾³ıÁË¡£
+æ³¨æ„ï¼š
+	git rm --cached [file]: ä»stageï¼ˆindexï¼Œæš‚å­˜åŒºï¼‰ é‡Œé¢åˆ é™¤æ–‡ä»¶ï¼Œå½“ä½ æäº¤ï¼ˆcommitï¼‰ä¹‹åæ–‡ä»¶å°±ä¼šåˆ é™¤äº†ã€‚
 
-	git reset HEAD [file]:  »ØÍËÔİ´æÇøÀïµÄÎÄ¼ş£¨»¹Ô­ÎªHEAD commitÀïÃæ¸ÃÎÄ¼şµÄ×´Ì¬£©£¬»á³·Ïú´ÓÉÏÒ»´ÎÌá½»£¨commit£©Ö®ºóµÄÒ»Ğ©²Ù×÷¡£
+	git reset HEAD [file]:  å›é€€æš‚å­˜åŒºé‡Œçš„æ–‡ä»¶ï¼ˆè¿˜åŸä¸ºHEAD commité‡Œé¢è¯¥æ–‡ä»¶çš„çŠ¶æ€ï¼‰ï¼Œä¼šæ’¤é”€ä»ä¸Šä¸€æ¬¡æäº¤ï¼ˆcommitï¼‰ä¹‹åçš„ä¸€äº›æ“ä½œã€‚
 
-		Èç¹ûÊÇ¶ÔÓÚĞÂÔöÎÄ¼ş£¬ÕâÁ½¸ö²Ù×÷Ê±µÈĞ§µÄ¡£
+		å¦‚æœæ˜¯å¯¹äºæ–°å¢æ–‡ä»¶ï¼Œè¿™ä¸¤ä¸ªæ“ä½œæ—¶ç­‰æ•ˆçš„ã€‚
 
-		ÕâÁ½¸öÃüÁî¶¼ÊÇ¶Ôstage,indexµÄ²Ù×÷¡£
+		è¿™ä¸¤ä¸ªå‘½ä»¤éƒ½æ˜¯å¯¹stage,indexçš„æ“ä½œã€‚
 	
-	git rmºÍrmµÄÇø±ğ
-		ÓÃ git rm À´É¾³ıÎÄ¼ş£¬Ö´ĞĞ git commit -m [file] Ìá½»Ê±»á½«Õâ¸öÉ¾³ı²Ù×÷¼ÇÂ¼ÏÂÀ´£»
+	git rmå’Œrmçš„åŒºåˆ«
+		ç”¨ git rm æ¥åˆ é™¤æ–‡ä»¶ï¼Œæ‰§è¡Œ git commit -m [file] æäº¤æ—¶ä¼šå°†è¿™ä¸ªåˆ é™¤æ“ä½œè®°å½•ä¸‹æ¥ï¼›
 
-		ÓÃ rm À´É¾³ıÎÄ¼ş£¬½ö½öÊÇÉ¾³ıÁËÎïÀíÎÄ¼ş,Ê¹ÓÃ git commit -am [file] Ìá½»²Å»á½«É¾³ıÎÄ¼şµÄ²Ù×÷Ìá½»ÉÏÈ¥¡£
+		ç”¨ rm æ¥åˆ é™¤æ–‡ä»¶ï¼Œä»…ä»…æ˜¯åˆ é™¤äº†ç‰©ç†æ–‡ä»¶,ä½¿ç”¨ git commit -am [file] æäº¤æ‰ä¼šå°†åˆ é™¤æ–‡ä»¶çš„æ“ä½œæäº¤ä¸Šå»ã€‚
+		
+		
+	å¦‚æœå‡ºç°ä»¥ä¸‹æŠ¥é”™
+	 ! [rejected]        master -> master (non-fast-forward)
+	error: failed to push some refs to 'git@github.com:Taury/CHAT.git'
+	hint: Updates were rejected because the tip of your current branch is behind
+	hint: its remote counterpart. Integrate the remote changes (e.g.
+	hint: 'git pull ...') before pushing again.
+	hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+	
+	æ˜¯å› ä¸ºè¿œç¨‹repositoryå’Œæœ¬åœ°çš„repositoryå†²çªå¯¼è‡´çš„ï¼Œåœ¨åˆ›å»ºç‰ˆæœ¬åº“åï¼Œæ·»åŠ äº†README.mdï¼Œ
+	ä½†æ˜¯å´æ²¡æœ‰pullåˆ°æœ¬åœ°ã€‚
+	
+	è§£å†³æ–¹æ³•ï¼š
+	
+	1.ä½¿ç”¨å¼ºåˆ¶pushçš„æ–¹æ³•ï¼šï¼ˆä¸å¯å–ï¼Œä¼šé€ æˆè¿œç¨‹ä¿®æ”¹ä¸¢å¤±ï¼‰
+
+		$ git push -u origin master -f 
+
+	2.pushå‰å…ˆå°†è¿œç¨‹repositoryä¿®æ”¹pullä¸‹æ¥
+
+		$ git pull origin master
+
+		$ git push -u origin master
+
+	3.è‹¥ä¸æƒ³mergeè¿œç¨‹å’Œæœ¬åœ°ä¿®æ”¹ï¼Œå¯ä»¥å…ˆåˆ›å»ºæ–°çš„åˆ†æ”¯åå†push
+
+		$ git branch [name]
+
+		$ git push -u origin [name]
